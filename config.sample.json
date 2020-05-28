@@ -1,18 +1,13 @@
 {
     "default_server_config": {
         "m.homeserver": {
-            "base_url": "https://matrix-client.matrix.org",
-            "server_name": "matrix.org"
-        },
-        "m.identity_server": {
-            "base_url": "https://vector.im"
+            "base_url": "https://kaija.us",
+            "server_name": "kaija.us"
         }
     },
-    "disable_custom_urls": false,
-    "disable_guests": false,
-    "disable_login_language_selector": false,
-    "disable_3pid_login": false,
-    "brand": "Riot",
+    "disable_login_language_selector": true,
+    "disable_3pid_login": true,
+    "brand": "chat.kaija",
     "integrations_ui_url": "https://scalar.vector.im/",
     "integrations_rest_url": "https://scalar.vector.im/api",
     "integrations_widgets_urls": [
@@ -23,7 +18,7 @@
         "https://scalar-staging.riot.im/scalar/api"
     ],
     "bug_report_endpoint_url": "https://riot.im/bugreports/submit",
-    "defaultCountryCode": "GB",
+    "defaultCountryCode": "US",
     "showLabsSettings": false,
     "features": {
         "feature_font_scaling": "labs",
@@ -34,19 +29,14 @@
         "feature_irc_ui": "labs"
     },
     "default_federate": true,
-    "default_theme": "light",
+    "default_theme": "dark",
     "roomDirectory": {
         "servers": [
-            "matrix.org"
+            "kaija.us"
         ]
     },
-    "welcomeUserId": "@riot-bot:matrix.org",
-    "piwik": {
-        "url": "https://piwik.riot.im/",
-        "whitelistedHSUrls": ["https://matrix.org"],
-        "whitelistedISUrls": ["https://vector.im", "https://matrix.org"],
-        "siteId": 1
-    },
+    "welcomeUserId": "@chat-bot:kaija.us",
+    "piwik": false,
     "enable_presence_by_hs_url": {
         "https://matrix.org": false,
         "https://matrix-client.matrix.org": false
@@ -54,7 +44,8 @@
     "settingDefaults": {
         "breadcrumbs": true
     },
+    "disable_custom_urls": true,
     "jitsi": {
-        "preferredDomain": "jitsi.riot.im"
+        "preferredDomain": "jitsi.kaija.us"
     }
 }
